@@ -540,6 +540,45 @@
             animation: fadeInUp 0.8s ease-out;
         }
     </style>
+            .download-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .download-section h2 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .download-section p {
+            color: white;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 20px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
 </head>
 <body>
     <!-- Hero Section -->
@@ -755,7 +794,17 @@
         document.querySelectorAll('.feature-card, .testimonial-card').forEach(el => {
             observer.observe(el);
         });
-    </script>
+    </script> 
+        <div class="container">
+        <div class="download-section">
+            <h2>📥 Baixe seu E-book Agora!</h2>
+            <p>Clique no botão abaixo para fazer o download do e-book com todas as instruções de acesso aos 100 posts no Canva:</p>
+            <a href="ebook-post-facil.pdf" download class="download-btn">
+                ⬇️ BAIXAR E-BOOK
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>
 
